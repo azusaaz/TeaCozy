@@ -1,2 +1,172 @@
 @charset "utf-8";
 
+/*====== universal ======*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica";
+    font-size: 22px;
+    background-color: black;
+    color: seashell;
+    text-align: center;
+    min-width: 400px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    top: 70px;
+}
+
+
+/*====== header ======*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    min-height: 69px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+}
+
+#logo {
+    display: flex;
+    height: 50px;
+    padding: 0 10px;
+}
+
+header nav {
+    color: seashell;
+}
+
+nav span {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+a:visited {
+    color: seashell;
+}
+
+
+/*====== mission ======*/
+
+#mission {
+    background-image: url("../img/img-mission-bg.jpg");
+    background-color: darkslategrey;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    height: 700px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#band {
+    background-color: black;
+    padding: 10px;
+}
+
+#band > h2 {
+    margin-bottom: 20px;
+}
+
+/*====== feature ======*/
+
+#teas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#feature {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding-top: 90px;
+    margin-top: 10px;
+}
+
+#feature h2 {
+    margin-bottom: 20px;
+}
+
+#feature img {
+    height: 200px;
+    width: 300px;
+    margin: 20px 12.5px 10px 12.5px;
+}
+
+/*====== locations ======*/
+
+#locations {
+    min-height: 460px;
+    max-width: 1180px;
+    background-image: url("../img/locations-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+#locations h2 {
+    padding: 60px 0 0 0;
+}
+
+#branches {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.branch {
+    background: #000;
+    min-width: 300px;
+    margin: 15px 20px;
+    padding: 10px 0;
+    opacity: 1;
+}
+
+.branch h3 {
+    padding: 15px;
+}
+
+.branch p {
+    font-size: 22px;
+    padding: 20px;
+}
+
+
+/*====== footer ======*/
+
+footer {
+    margin: 20px;
+}
+
+footer h5 {
+    margin: 40px;
+}
+
+#contact {
+    min-height: 180px;
+    padding: 10px;
+}
+
+#copyright h5 {
+    margin: 40px 0 30px 0;
+    text-align: left;
+}
