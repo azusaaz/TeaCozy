@@ -8,18 +8,19 @@
 </head>
 
 <body>
+    <!-- header nav -->
     <header>
-
         <img id="logo" src="./img/tea-cozy-logo.png" alt="logo">
-
         <nav>
-            <span><a href="#mission">Mission</a></span>
-            <span><a href="#feature">Feeatured Teaaas</a></span>
-            <span><a href="#locations">Locations</a></span>
+            <span><a class="menu" href="#mission">Mission</a></span>
+            <span><a class="menu" href="#feature">Featured Teas</a></span>
+            <span><a class="menu" href="#locations">Locations</a></span>
         </nav>
     </header>
-    
+
+    <!-- main content -->
     <div class="content">
+        <!-- mission section -->
         <div id="mission">
             <div id="band">
                 <h2>Our Mission</h2>
@@ -28,8 +29,16 @@
             </div>
         </div>
 
+        <!-- feature section -->
         <div id="feature">
-            <h2>Tea of the Month</h2>
+            <div class="deco-wrap">
+                <div class="deco"></div>
+            </div>
+
+            <div class="text-wrap">
+                <h2>-|- -|- -|-&nbsp;&nbsp;&nbsp;&nbsp;Tea of the Month&nbsp;&nbsp;&nbsp;&nbsp;-|- -|- -|-</h2>
+            </div>
+
             <h4>What's Steeping at The Tea Cozy?</h4>
             <div id="teas">
                 <div>
@@ -53,25 +62,30 @@
                     <h4>Bedford Bizarre Tea</h4>
                 </div>
             </div>
+
+            <div class="deco-wrap">
+                <div class="deco flip"></div>
+            </div>
         </div>
-        
+
+        <!-- locations section -->
         <div id="locations">
-            <h2>Locations</h2>
+            <h2> Locations </h2>
             <div id="branches">
                 <div class="branch">
-                    <h3>Downtown</h3>
+                    <h3><a href="https://goo.gl/maps/J9JDHaCyLkt"><span>*</span> Downtown <span>*</span></a></h3>
                     <p>384 West 4th St</p>
                     <p>Suite 108</p>
                     <p>Portland, Maine</p>
                 </div>
                 <div class="branch">
-                    <h3>East Bayside</h3>
+                    <h3><a href="https://goo.gl/maps/J9JDHaCyLkt"><span>*</span> East Bayside <span>*</span> </a></h3>
                     <p>3433 Phisherman's Avenue</p>
                     <p>(Northwest Corner)</p>
                     <p>Portland, Maine</p>
                 </div>
                 <div class="branch">
-                    <h3>Oakdale</h3>
+                    <h3><a href="https://goo.gl/maps/J9JDHaCyLkt"><span>*</span> Oakdale <span>*</span></a></h3>
                     <p>515 Crescent Avenue</p>
                     <p>Second Floor</p>
                     <p>Portland, Maine</p>
@@ -79,17 +93,25 @@
             </div>
         </div>
 
+        <!-- footer -->
         <footer>
             <div id="contact">
                 <h2>The Tea Cozy</h2>
-                <h5>contact@theteacozy.com</h5>
+                <h5 id="email">contact@theteacozy.com</h5>
                 <h5>917-555-8904</h5>
             </div>
+
             <div id="copyright">
                 <h5>copyright The Tea Cozy 2017</h5>
             </div>
         </footer>
     </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- custom JS -->
+    <script src="js/custom.js"></script>
+
 </body>
 
 </html>

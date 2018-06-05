@@ -10,18 +10,20 @@
 body {
     font-family: "Helvetica";
     font-size: 22px;
-    background-color: black;
+    background-color: #87c1bd;
     color: seashell;
     text-align: center;
-    min-width: 400px;
+    min-width: 300px;
+    position: relative;
 }
 
 .content {
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 70px;
-}
 
+}
 
 /*====== header ======*/
 
@@ -34,7 +36,7 @@ header {
     width: 100%;
     min-height: 69px;
     border-bottom: 1px solid seashell;
-    background-color: black;
+    background-color: #87c1bd;
 }
 
 #logo {
@@ -43,21 +45,23 @@ header {
     padding: 0 10px;
 }
 
-header nav {
-    color: seashell;
-}
-
 nav span {
     display: inline-block;
     padding: 20px 10px;
 }
 
-a:visited {
+.menu {
+
+
     color: seashell;
 }
 
+.menu:hover {
+    color: white;
+    opacity: 0.8;
+}
 
-/*====== mission ======*/
+/*====== mission section ======*/
 
 #mission {
     background-image: url("../img/img-mission-bg.jpg");
@@ -72,10 +76,12 @@ a:visited {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    margin-top: -70px;
+    padding-top: 70px;
 }
 
 #band {
-    background-color: black;
+    background-color: rgba(10, 20, 20, 0.5);
     padding: 10px;
 }
 
@@ -83,7 +89,8 @@ a:visited {
     margin-bottom: 20px;
 }
 
-/*====== feature ======*/
+
+/*====== feature section ======*/
 
 #teas {
     display: flex;
@@ -94,12 +101,53 @@ a:visited {
 #feature {
     max-width: 1000px;
     margin: 80px auto;
-    padding-top: 90px;
-    margin-top: 10px;
+    padding-top: 80px;
+    margin-top: 20px;
+}
+
+.deco-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+}
+
+.deco {
+    background-image: url("../img/decoline.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    width: 600px;
+    height: 70px;
+    margin: 10px auto 50px -300px;
+    overflow: hidden;
+    opacity: 0.75;
+}
+
+.flip {
+    margin-top: 50px;
+    transform: rotate(180deg);
+
 }
 
 #feature h2 {
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    width: 1000px;
+    height: 100%;
+    min-width: 600px;
+    margin-left: -500px;
     margin-bottom: 20px;
+}
+
+.text-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
 }
 
 #feature img {
@@ -108,21 +156,23 @@ a:visited {
     margin: 20px 12.5px 10px 12.5px;
 }
 
-/*====== locations ======*/
+/*====== locations section ======*/
 
 #locations {
-    min-height: 460px;
+    min-height: 400px;
     max-width: 1180px;
     background-image: url("../img/locations-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%;
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 50px 10px;
+
 }
 
 #locations h2 {
-    padding: 60px 0 0 0;
+    padding: 40px 0 0 0;
+
 }
 
 #branches {
@@ -134,20 +184,32 @@ a:visited {
 }
 
 .branch {
-    background: #000;
+    background: rgba(10, 20, 20, 0.5);
     min-width: 300px;
+    min-height: 230px;
     margin: 15px 20px;
     padding: 10px 0;
     opacity: 1;
+    border-radius: 60%;
 }
 
 .branch h3 {
-    padding: 15px;
+    padding: 25px;
+
+}
+
+.branch a {
+    text-decoration: none;
+    color: seashell;
 }
 
 .branch p {
     font-size: 22px;
-    padding: 20px;
+    padding: 10px;
+}
+
+a span {
+    color: rgb(177, 219, 216);
 }
 
 
@@ -164,6 +226,11 @@ footer h5 {
 #contact {
     min-height: 180px;
     padding: 10px;
+}
+
+#email {
+    letter-spacing: 1px;
+
 }
 
 #copyright h5 {
